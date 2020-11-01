@@ -22,7 +22,7 @@ class TestAddContact(unittest.TestCase):
 
     def test_add_empty_contact(self):
         wd = self.wd
-        self.open_home_page(wd)
+        self.open_home_page(wd)/
         self.login(wd, username="admin", password="secret")
         self.add_new_contact(wd)
         self.create_contact(wd, Contact(firstname="", middlename="", lastname="", nickname=""))

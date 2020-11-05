@@ -48,3 +48,18 @@ class ContactHelper:
         # wait info
         wd.find_element_by_css_selector("div.msgbox")
         self.return_home_page_contact()
+
+    def modify(self):
+        wd = self.app.wd
+        self.open_contact_page()
+        # select first contact
+        wd.find_element_by_name("selected[]").click()
+        # Edit
+        wd.find_element_by_css_selector("img[alt=\"Edit\"]").click()
+        # modify
+        wd.find_element_by_name("firstname").click()
+        wd.find_element_by_name("firstname").clear()
+        wd.find_element_by_name("firstname").send_keys("test")
+        # click update
+        wd.find_element_by_name("update").click()
+        self.return_home_page_contact()

@@ -49,7 +49,7 @@ class ContactHelper:
         wd.find_element_by_css_selector("div.msgbox")
         self.return_home_page_contact()
 
-    def modify(self):
+    def modify(self, contact):
         wd = self.app.wd
         self.open_contact_page()
         # select first contact
@@ -59,7 +59,16 @@ class ContactHelper:
         # modify
         wd.find_element_by_name("firstname").click()
         wd.find_element_by_name("firstname").clear()
-        wd.find_element_by_name("firstname").send_keys("test")
+        wd.find_element_by_name("firstname").send_keys(contact.firstname)
+        wd.find_element_by_name("middlename").click()
+        wd.find_element_by_name("middlename").clear()
+        wd.find_element_by_name("middlename").send_keys(contact.middlename)
+        wd.find_element_by_name("lastname").click()
+        wd.find_element_by_name("lastname").clear()
+        wd.find_element_by_name("lastname").send_keys(contact.lastname)
+        wd.find_element_by_name("nickname").click()
+        wd.find_element_by_name("nickname").clear()
+        wd.find_element_by_name("nickname").send_keys(contact.nickname)
         # click update
         wd.find_element_by_name("update").click()
         self.return_home_page_contact()

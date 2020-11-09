@@ -16,18 +16,7 @@ class ContactHelper:
     def create(self, contact):
         wd = self.app.wd
         # fill group form
-        wd.find_element_by_name("firstname").click()
-        wd.find_element_by_name("firstname").clear()
-        wd.find_element_by_name("firstname").send_keys(contact.firstname)
-        wd.find_element_by_name("middlename").click()
-        wd.find_element_by_name("middlename").clear()
-        wd.find_element_by_name("middlename").send_keys(contact.middlename)
-        wd.find_element_by_name("lastname").click()
-        wd.find_element_by_name("lastname").clear()
-        wd.find_element_by_name("lastname").send_keys(contact.lastname)
-        wd.find_element_by_name("nickname").click()
-        wd.find_element_by_name("nickname").clear()
-        wd.find_element_by_name("nickname").send_keys(contact.nickname)
+        self.addinfo(contact)
         # submit contact creation
         wd.find_element_by_name("submit").click()
         self.return_home_page_contact()
@@ -57,6 +46,13 @@ class ContactHelper:
         # Edit
         wd.find_element_by_css_selector("img[alt=\"Edit\"]").click()
         # modify
+        self.addinfo(contact)
+        # click update
+        wd.find_element_by_name("update").click()
+        self.return_home_page_contact()
+
+    def addinfo(self, contact):
+        wd = self.app.wd
         wd.find_element_by_name("firstname").click()
         wd.find_element_by_name("firstname").clear()
         wd.find_element_by_name("firstname").send_keys(contact.firstname)
@@ -69,6 +65,3 @@ class ContactHelper:
         wd.find_element_by_name("nickname").click()
         wd.find_element_by_name("nickname").clear()
         wd.find_element_by_name("nickname").send_keys(contact.nickname)
-        # click update
-        wd.find_element_by_name("update").click()
-        self.return_home_page_contact()

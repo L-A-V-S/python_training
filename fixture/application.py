@@ -17,6 +17,13 @@ class Application:
         wd = self.wd
         wd.get("http://localhost/")
 
+    def is_valid(self):
+        try:
+            self.wd.current_url
+            return True
+        except:
+            return False
+
     def destroy(self):
         self.wd.quit()
 

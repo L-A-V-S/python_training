@@ -15,6 +15,7 @@ class ContactHelper:
 
     def create(self, contact):
         wd = self.app.wd
+        self.add_new_contact()
         # fill group form
         self.addinfo(contact)
         # submit contact creation
@@ -42,8 +43,23 @@ class ContactHelper:
     def modify(self, contact):
         wd = self.app.wd
         self.open_contact_page()
-        # select first contact
+        self.select_first_contact()
+        # Edit
+        wd.find_element_by_css_selector("img[alt=\"Edit\"]").click()
+        # modify
+        self.addinfo(contact)
+        # click update
+        wd.find_element_by_name("update").click()
+        self.return_home_page_contact()
+
+    def select_first_contact(self):
+        wd = self.app.wd
         wd.find_element_by_name("selected[]").click()
+
+    def modify_first_contact(self, contact):
+        wd = self.app.wd
+        self.open_contact_page()
+        self.select_first_contact()
         # Edit
         wd.find_element_by_css_selector("img[alt=\"Edit\"]").click()
         # modify

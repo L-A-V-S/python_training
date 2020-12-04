@@ -57,7 +57,7 @@ class ContactHelper:
         self.open_contact_page()
         self.select_first_contact()
         # Edit
-        wd.find_element_by_css_selector("img[alt=\"Edit\"]").click()
+        wd.find_element_by_css_selector('img[alt="Edit"]').click()
         # modify
         self.addinfo(contact)
         # click update
@@ -74,7 +74,7 @@ class ContactHelper:
         self.open_contact_page()
         self.select_contact_by_index(index)
         # Edit
-        wd.find_element_by_css_selector("img[alt=\"Edit\"]").click()
+        wd.find_element_by_css_selector('img[alt="Edit"]').click()
         # modify
         self.addinfo(contact)
         # click update

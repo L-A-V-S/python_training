@@ -3,7 +3,7 @@ from model.contact import Contact
 
 class ContactHelper:
 
-    def __init__(self, app):
+    def __init__(self,app):
         self.app = app
 
     def open_contact_page(self):
@@ -116,8 +116,8 @@ class ContactHelper:
             #contact_table = wd.find_element_by_css_selector("tbody")
             for element in wd.find_elements_by_name("entry"):
                 cells = element.find_elements_by_tag_name("td")
-                text1 = cells[1].text
-                text2 = cells[2].text
+                firstname = cells[1].text
+                lastname = cells[2].text
                 id = element.find_element_by_name("selected[]").get_attribute("value")
-                self.contact_cache.append(Contact(firstname=text2,lastname=text1, id=id))
+                self.contact_cache.append(Contact(firstname=firstname,lastname=lastname, id=id))
         return list(self.contact_cache)

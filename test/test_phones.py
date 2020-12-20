@@ -5,6 +5,7 @@ def test_phones_on_home_page(app):
     assert contact_from_home_page.homephone == clear(contact_from_edit_page.homephone)
     assert contact_from_home_page.workphone == clear(contact_from_edit_page.workphone)
     assert contact_from_home_page.mobilphone == clear(contact_from_edit_page.mobilphone)
+    assert contact_from_home_page.secondaryphone == clear(contact_from_edit_page.secondaryphone)
 
 def test_phones_on_contact_view_page(app):
     contact_from_view_page = app.contact.get_contact_from_view_page(0)
@@ -14,5 +15,5 @@ def test_phones_on_contact_view_page(app):
     assert contact_from_view_page.mobilphone == contact_from_edit_page.mobilphone
 
 
-def clear(s) :
-    return re.sub("[() -]", "" , s)
+def clear(s):
+    return re.sub("[() -]", "", s)

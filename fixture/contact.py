@@ -129,6 +129,7 @@ class ContactHelper:
                                                   all_emails_from_home_page=all_emails_from_home_page))
         return list(self.contact_cache)
 
+
     def open_contact_to_edit_by_index(self, index):
         wd = self.app.wd
         self.open_contact_page()

@@ -3,7 +3,7 @@ from model.group import Group
 import pytest
 import random
 import string
-from date.add_group import constant as testdata
+from data.add_group import constant as testdata
 
 
 @pytest.mark.parametrize("group", testdata, ids=[repr(x) for x in testdata])

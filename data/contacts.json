@@ -1,5 +1,6 @@
 [
   {
+    "py/object": "model.contact.Contact",
     "firstname": "",
     "middlename": "",
     "lastname": "",
@@ -17,10 +18,11 @@
     "id": null
   },
   {
-    "firstname": "firstnameydC ",
-    "middlename": "middlenameG>O}#=",
-    "lastname": "lastnamek",
-    "nickname": "nickname-U",
+    "py/object": "model.contact.Contact",
+    "firstname": "firstname2T",
+    "middlename": "middlename55.uCqdL!Sw7kD   f_",
+    "lastname": "lastname tCdo*M$W",
+    "nickname": "nicknamenm'^38g",
     "homephone": null,
     "mobilphone": null,
     "workphone": null,
@@ -34,10 +36,11 @@
     "id": null
   },
   {
-    "firstname": "firstname\" }+b D{3",
-    "middlename": "middlenamehTMV?P~}2^;:",
-    "lastname": "lastname[j$I2TRci ^9SI M",
-    "nickname": "nicknameET+5Qw#I|)>Br~>5G",
+    "py/object": "model.contact.Contact",
+    "firstname": "firstnameQ]/B",
+    "middlename": "middlename3RSEuhuYdO(IgLyt!-",
+    "lastname": "lastnameZXJCA",
+    "nickname": "nicknamebi|6%8m?h\"j4[J",
     "homephone": null,
     "mobilphone": null,
     "workphone": null,
@@ -51,10 +54,11 @@
     "id": null
   },
   {
-    "firstname": "firstnameK  Ao  ",
-    "middlename": "middlename/UUJ Kr` =@&}v1 ",
-    "lastname": "lastname NTJWi",
-    "nickname": "nickname>*g8cFLE~Y5~sEa[^n",
+    "py/object": "model.contact.Contact",
+    "firstname": "firstname/|N0~f",
+    "middlename": "middlename< AQG0 ^h y9Ij!",
+    "lastname": "lastname*\"",
+    "nickname": "nickname<Yp~",
     "homephone": null,
     "mobilphone": null,
     "workphone": null,
@@ -68,10 +72,11 @@
     "id": null
   },
   {
-    "firstname": "firstnameiB 4a!",
-    "middlename": "middlenameH\\ [O0C?0 BS<A, n",
-    "lastname": "lastnameFN9X v^ke",
-    "nickname": "nickname3*mO*t",
+    "py/object": "model.contact.Contact",
+    "firstname": "firstname <k.e",
+    "middlename": "middlename.E1h~@h@1 6G ",
+    "lastname": "lastnameQY>z:Ef0!?&iS e ",
+    "nickname": "nickname$tf \"}# (d)",
     "homephone": null,
     "mobilphone": null,
     "workphone": null,
@@ -85,10 +90,11 @@
     "id": null
   },
   {
-    "firstname": "firstnameH5;",
-    "middlename": "middlename>C",
-    "lastname": "lastnameCabdh",
-    "nickname": "nicknamejc5",
+    "py/object": "model.contact.Contact",
+    "firstname": "firstname~=m FJ`",
+    "middlename": "middlenameV;D (77#Xpfz~St",
+    "lastname": "lastnamee\\UT  ?^{@6dEXA",
+    "nickname": "nickname9h'3 U:{u/#g 8?VZ`",
     "homephone": null,
     "mobilphone": null,
     "workphone": null,

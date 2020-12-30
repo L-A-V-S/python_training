@@ -27,6 +27,12 @@ def app(request):
     fixture.session.ensure_login(username=web_config['username'], password=web_config['password'])
     return fixture
 
+
+@pytest.fixture
+def check_ui(request):
+    return request.config.getoption("--check ui")
+
+
 @pytest.fixture(scope="session", autouse=True)
 def db(request):
     db_config = load_config(request.config.getoption("--target"))['db']
@@ -49,6 +55,7 @@ def stop(request):
 def pytest_addoption(parser):
     parser.addoption("--browser", action="store", default="firefox")
     parser.addoption("--target", action="store", default="target.json")
+    parser.addoption("--check_ui", action="store_true")
 
 
 def pytest_generate_tests(metafunc):
